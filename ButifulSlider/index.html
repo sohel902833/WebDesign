@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+    <style>
+        body{
+            
+        }
+        #album{
+            width: 600px;
+            height: 500px;
+            margin: 0 auto;
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="album">
+        <div style="background: url('./images/1.jpeg'); background-size: 100% 100%;"></div>
+        <div style="background: url('./images/2.jpeg'); background-size:cover"></div>
+        <div style="background: url('./images/3.jpeg'); background-size:cover"></div>
+        <div style="background: url('./images/4.jpeg'); background-size:cover"></div>
+        <div style="background: url('./images/5.jpeg'); background-size:cover"></div>
+        <div style="background: url('./images/6.jpeg'); background-size:cover"></div>
+        <div style="background: url('./images/7.jpeg'); background-size:cover"></div>
+        <div style="background: url('./images/8.jpeg'); background-size:cover"></div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="turn.js"></script>
+    <script>
+        $('#album').turn({gradients: true, acceleration: true});
+    </script>
+</body>
+</html>
